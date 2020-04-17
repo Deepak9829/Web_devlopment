@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function check()
+		{
+			var u = document.getElementById("user").value;
+			var p = document.getElementById("pass").value;
+			if(u=="abc" && p=="123")
+			{
+                  //document.write("login correct");
+                  document.getElementById("mypara").innerHTML="login successfully";
+            }
+			else
+			{
+				//document.write("login incoreect");
+				 document.getElementById("mypara").innerHTML="login incoreect";
+			}
+		}
+	</script>
+</head>
+<body>
+	<p id="mypara"> </p>
+Username: <input type="text" id="user"><br>
+Password:<input type="password" id="pass"><br>
+<button onclick="check();">login</button>
+</body>
+</html>
