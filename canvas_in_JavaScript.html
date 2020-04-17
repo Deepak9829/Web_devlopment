@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/javascript">
+	
+		canvas{
+			border:2px solid red;
+		}
+	</style>
+	<script type="text/javascript">
+		function cana()
+		{
+			var v =document.getElementById("cana");
+			var con = v.getcontext("2d");
+			con.fillstyle="red";
+			con.fillRect(10,10,100,100);
+		}
+	</script>
+</head>
+<body>
+<canvas name="mycanvas"><br>
+	<button onclick="cana();">click...</button>
+	
+</canvas>
+</body>
+</html>
