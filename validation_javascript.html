@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function myvalid(argument) {
+			var v = document.myform.t1.value;
+			var r =/^[A-Za-z]+$/; //regular expression
+			if(v.match(r))
+			{
+				alert("value ok");
+			}
+			else
+			{
+				alert("value not ok");
+			}
+			/*if(v == "")
+			{
+               alert("enter value in text box");
+			}
+			else if(isNaN(v))
+			{
+               alert("enter no. only");
+			}
+			else if(v.length==10)
+			{
+                alert("no. ok")
+			}
+			else
+			{
+				alert("enter 10 digit only")
+			}*/
+
+
+		}
+	</script>
+</head>
+<body>
+<form name="myform">
+	<input type="text" name="t1">
+	<button onclick="myvalid();">click</button>
+</form>
+</body>
+</html>
